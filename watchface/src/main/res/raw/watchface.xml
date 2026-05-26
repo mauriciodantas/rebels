@@ -163,25 +163,25 @@
             <Complication type="SHORT_TEXT">
                 <Placeholder><PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw></Placeholder>
 
-                <!-- Rebels Theme (0) -->
+                <!-- Rebels (0) -->
                 <Group x="0" y="0" width="48" height="32">
-                    <Variant expression="[CONFIGURATION.theme] != 0" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 0 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
                     <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFFA726"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                     <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#FFA726"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
                 </Group>
 
-                <!-- Dark Theme (1) -->
+                <!-- Dark (1) -->
                 <Group x="0" y="0" width="48" height="32">
-                    <Variant expression="[CONFIGURATION.theme] != 1" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 1 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#59FF2D3A" thickness="0.8"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
                     <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                     <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#FF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
                 </Group>
 
-                <!-- Jedi Theme (2) -->
+                <!-- Jedi (2) -->
                 <Group x="0" y="0" width="48" height="32">
-                    <Variant expression="[CONFIGURATION.theme] != 2" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 2 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#661D4EAF" thickness="0.8"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
                     <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8C1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                     <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
@@ -195,25 +195,25 @@
             <Complication type="SHORT_TEXT">
                 <Placeholder><PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw></Placeholder>
 
-                <!-- Rebels Theme (0) -->
+                <!-- Rebels (0) -->
                 <Group x="0" y="0" width="48" height="32">
-                    <Variant expression="[CONFIGURATION.theme] != 0" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 0 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
                     <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFFA726"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                     <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#FFE63946"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
                 </Group>
 
-                <!-- Dark Theme (1) -->
+                <!-- Dark (1) -->
                 <Group x="0" y="0" width="48" height="32">
-                    <Variant expression="[CONFIGURATION.theme] != 1" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 1 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#59FF2D3A" thickness="0.8"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
                     <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                     <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#FFFF8A90"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
                 </Group>
 
-                <!-- Jedi Theme (2) -->
+                <!-- Jedi (2) -->
                 <Group x="0" y="0" width="48" height="32">
-                    <Variant expression="[CONFIGURATION.theme] != 2" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 2 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#661D4EAF" thickness="0.8"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
                     <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8C1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                     <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#FFA55A1A"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
@@ -227,25 +227,25 @@
             <Complication type="SHORT_TEXT">
                 <Placeholder><PartDraw x="0" y="0" width="54" height="38"><RoundRectangle x="0" y="0" width="54" height="38" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw></Placeholder>
 
-                <!-- Rebels Theme (0) -->
+                <!-- Rebels (0) -->
                 <Group x="0" y="0" width="54" height="38">
-                    <Variant expression="[CONFIGURATION.theme] != 0" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 0 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="54" height="38"><RoundRectangle x="0" y="0" width="54" height="38" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
                     <PartText x="0" y="1" width="54" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFFA726"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                     <PartText x="0" y="14" width="54" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FFA726"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
                 </Group>
 
-                <!-- Dark Theme (1) -->
+                <!-- Dark (1) -->
                 <Group x="0" y="0" width="54" height="38">
-                    <Variant expression="[CONFIGURATION.theme] != 1" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 1 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="54" height="38"><RoundRectangle x="0" y="0" width="54" height="38" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#59FF2D3A" thickness="0.8"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
                     <PartText x="0" y="1" width="54" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                     <PartText x="0" y="14" width="54" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
                 </Group>
 
-                <!-- Jedi Theme (2) -->
+                <!-- Jedi (2) -->
                 <Group x="0" y="0" width="54" height="38">
-                    <Variant expression="[CONFIGURATION.theme] != 2" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 2 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="54" height="38"><RoundRectangle x="0" y="0" width="54" height="38" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#661D4EAF" thickness="0.8"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
                     <PartText x="0" y="1" width="54" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8C1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                     <PartText x="0" y="14" width="54" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
@@ -259,23 +259,23 @@
             <Complication type="SHORT_TEXT">
                 <Placeholder><PartText x="1" y="14" width="50" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FFA726"/><Template>--</Template></Text></PartText></Placeholder>
 
-                <!-- Rebels Theme (0) -->
+                <!-- Rebels (0) -->
                 <Group x="0" y="0" width="52" height="66">
-                    <Variant expression="[CONFIGURATION.theme] != 0" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 0 ? 255 : 0"/>
                     <PartText x="1" y="14" width="50" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FFA726"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
                     <PartText x="1" y="52" width="50" height="14"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFFA726"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                 </Group>
 
-                <!-- Dark Theme (1) -->
+                <!-- Dark (1) -->
                 <Group x="0" y="0" width="52" height="66">
-                    <Variant expression="[CONFIGURATION.theme] != 1" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 1 ? 255 : 0"/>
                     <PartText x="1" y="14" width="50" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
                     <PartText x="1" y="52" width="50" height="14"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                 </Group>
 
-                <!-- Jedi Theme (2) -->
+                <!-- Jedi (2) -->
                 <Group x="0" y="0" width="52" height="66">
-                    <Variant expression="[CONFIGURATION.theme] != 2" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 2 ? 255 : 0"/>
                     <PartText x="1" y="14" width="50" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
                     <PartText x="1" y="52" width="50" height="14"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8C1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                 </Group>
@@ -284,9 +284,9 @@
             <Complication type="RANGED_VALUE">
                 <Placeholder><PartDraw x="0" y="0" width="52" height="52"><Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="225"><Stroke color="#6BFFA726" thickness="3" cap="ROUND"/></Arc></PartDraw></Placeholder>
 
-                <!-- Rebels Theme (0) -->
+                <!-- Rebels (0) -->
                 <Group x="0" y="0" width="52" height="66">
-                    <Variant expression="[CONFIGURATION.theme] != 0" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 0 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="52" height="52">
                         <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="225"><Stroke color="#6BFFA726" thickness="3" cap="ROUND"/></Arc>
                         <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#FFA726" thickness="3" cap="ROUND"/></Arc>
@@ -295,9 +295,9 @@
                     <PartText x="1" y="52" width="50" height="14"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFFA726"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                 </Group>
 
-                <!-- Dark Theme (1) -->
+                <!-- Dark (1) -->
                 <Group x="0" y="0" width="52" height="66">
-                    <Variant expression="[CONFIGURATION.theme] != 1" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 1 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="52" height="52">
                         <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="225"><Stroke color="#59FF2D3A" thickness="3" cap="ROUND"/></Arc>
                         <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#FF2D3A" thickness="3" cap="ROUND"/></Arc>
@@ -306,9 +306,9 @@
                     <PartText x="1" y="52" width="50" height="14"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
                 </Group>
 
-                <!-- Jedi Theme (2) -->
+                <!-- Jedi (2) -->
                 <Group x="0" y="0" width="52" height="66">
-                    <Variant expression="[CONFIGURATION.theme] != 2" target="alpha" value="0"/>
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 2 ? 255 : 0"/>
                     <PartDraw x="0" y="0" width="52" height="52">
                         <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="225"><Stroke color="#661D4EAF" thickness="3" cap="ROUND"/></Arc>
                         <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#1D4EAF" thickness="3" cap="ROUND"/></Arc>
