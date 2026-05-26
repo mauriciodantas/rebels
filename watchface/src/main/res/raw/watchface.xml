@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="400" height="400">
+    <Metadata key="CLOCK_TYPE" value="ANALOG"/>
+    <Metadata key="PREVIEW_TIME" value="10:10:30"/>
+    
+    <UserConfigurations>
+        <ListConfiguration
+            id="theme"
+            displayName="@string/config_theme_label"
+            defaultValue="0"
+            screenReaderText="@string/config_theme_label">
+            <ListOption id="0" displayName="@string/config_theme_rebels" screenReaderText="@string/config_theme_rebels"/>
+            <ListOption id="1" displayName="@string/config_theme_dark" screenReaderText="@string/config_theme_dark"/>
+            <ListOption id="2" displayName="@string/config_theme_jedi" screenReaderText="@string/config_theme_jedi"/>
+        </ListConfiguration>
+    </UserConfigurations>
+
+    <Scene>
+        <ListConfiguration id="theme">
+            <!-- REBELS THEME (0) -->
+            <ListOption id="0">
+                <PartImage x="0" y="0" width="400" height="400"><Image resource="rebels_background"/></PartImage>
+                <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="rebels_pattern"/></PartImage>
+                <PartImage x="0" y="0" width="400" height="400"><Image resource="rebels_ticks"/></PartImage>
+                <PartImage x="0" y="0" width="400" height="400"><Image resource="rebels_sigil"/></PartImage>
+                <Group x="0" y="0" width="400" height="400" name="rebels_numerals">
+                    <PartText x="186" y="29" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#FFA726"><Template>12</Template></Font></Text></PartText>
+                    <PartText x="341" y="187" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#FFA726"><Template>03</Template></Font></Text></PartText>
+                    <PartText x="186" y="341" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#FFA726"><Template>06</Template></Font></Text></PartText>
+                    <PartText x="31" y="187" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#FFA726"><Template>09</Template></Font></Text></PartText>
+                </Group>
+                <PartText x="80" y="96" width="240" height="12">
+                    <Variant mode="AMBIENT" target="alpha" value="0"/>
+                    <Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#D9FFA726"><Template>RED-5 · S-FOIL LOCKED</Template></Font></Text>
+                </PartText>
+                <Group x="160" y="248" width="80" height="22">
+                    <Variant mode="AMBIENT" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="80" height="22">
+                        <RoundRectangle x="0" y="0" width="80" height="22" cornerRadiusX="4" cornerRadiusY="4">
+                            <Stroke color="#6BFFA726" thickness="0.8"/>
+                            <Fill color="#221E16"/>
+                        </RoundRectangle>
+                    </PartDraw>
+                    <DigitalClock x="0" y="0" width="80" height="22">
+                        <TimeText x="0" y="0" width="80" height="22" format="hh:mm:ss" hourFormat="SYNC_TO_DEVICE" align="CENTER">
+                            <Font family="SYNC_TO_DEVICE" size="11" weight="BOLD" color="#FFA726"/>
+                        </TimeText>
+                    </DigitalClock>
+                </Group>
+                <PartText x="60" y="330" width="280" height="12">
+                    <Variant mode="AMBIENT" target="alpha" value="0"/>
+                    <Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFFA726"><Template>STAY ON TARGET</Template></Font></Text>
+                </PartText>
+                <Group x="0" y="0" width="400" height="400" name="rebels_hands">
+                    <AnalogClock x="0" y="0" width="400" height="400">
+                        <HourHand resource="rebels_hand_hour" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
+                        <MinuteHand resource="rebels_hand_minute" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
+                        <SecondHand resource="rebels_hand_second" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5">
+                            <Variant mode="AMBIENT" target="alpha" value="0"/>
+                        </SecondHand>
+                    </AnalogClock>
+                    <PartImage x="0" y="0" width="400" height="400"><Image resource="rebels_pivot"/></PartImage>
+                </Group>
+            </ListOption>
+
+            <!-- DARK THEME (1) -->
+            <ListOption id="1">
+                <PartImage x="0" y="0" width="400" height="400"><Image resource="dark_background"/></PartImage>
+                <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="dark_pattern"/></PartImage>
+                <PartImage x="0" y="0" width="400" height="400"><Image resource="dark_ticks"/></PartImage>
+                <PartImage x="0" y="0" width="400" height="400"><Image resource="dark_sigil"/></PartImage>
+                <Group x="0" y="0" width="400" height="400" name="dark_numerals">
+                    <PartText x="186" y="29" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#FF2D3A"><Template>12</Template></Font></Text></PartText>
+                    <PartText x="341" y="187" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#FF2D3A"><Template>03</Template></Font></Text></PartText>
+                    <PartText x="186" y="341" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#FF2D3A"><Template>06</Template></Font></Text></PartText>
+                    <PartText x="31" y="187" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#FF2D3A"><Template>09</Template></Font></Text></PartText>
+                </Group>
+                <PartText x="80" y="96" width="240" height="12">
+                    <Variant mode="AMBIENT" target="alpha" value="0"/>
+                    <Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#D9FF2D3A"><Template>S-117 · INQUISITOR</Template></Font></Text>
+                </PartText>
+                <Group x="160" y="248" width="80" height="22">
+                    <Variant mode="AMBIENT" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="80" height="22">
+                        <RoundRectangle x="0" y="0" width="80" height="22" cornerRadiusX="4" cornerRadiusY="4">
+                            <Stroke color="#59FF2D3A" thickness="0.8"/>
+                            <Fill color="#180609"/>
+                        </RoundRectangle>
+                    </PartDraw>
+                    <DigitalClock x="0" y="0" width="80" height="22">
+                        <TimeText x="0" y="0" width="80" height="22" format="hh:mm:ss" hourFormat="SYNC_TO_DEVICE" align="CENTER">
+                            <Font family="SYNC_TO_DEVICE" size="11" weight="BOLD" color="#FF2D3A"/>
+                        </TimeText>
+                    </DigitalClock>
+                </Group>
+                <PartText x="60" y="330" width="280" height="12">
+                    <Variant mode="AMBIENT" target="alpha" value="0"/>
+                    <Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFF2D3A"><Template>PEACE IS A LIE</Template></Font></Text>
+                </PartText>
+                <Group x="0" y="0" width="400" height="400" name="dark_hands">
+                    <AnalogClock x="0" y="0" width="400" height="400">
+                        <HourHand resource="dark_hand_hour" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
+                        <MinuteHand resource="dark_hand_minute" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
+                        <SecondHand resource="dark_hand_second" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5">
+                            <Variant mode="AMBIENT" target="alpha" value="0"/>
+                        </SecondHand>
+                    </AnalogClock>
+                    <PartImage x="0" y="0" width="400" height="400"><Image resource="dark_pivot"/></PartImage>
+                </Group>
+            </ListOption>
+
+            <!-- JEDI THEME (2) -->
+            <ListOption id="2">
+                <PartImage x="0" y="0" width="400" height="400"><Image resource="jedi_background"/></PartImage>
+                <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="jedi_pattern"/></PartImage>
+                <PartImage x="0" y="0" width="400" height="400"><Image resource="jedi_ticks"/></PartImage>
+                <PartImage x="0" y="0" width="400" height="400"><Image resource="jedi_sigil"/></PartImage>
+                <Group x="0" y="0" width="400" height="400" name="jedi_numerals">
+                    <PartText x="186" y="29" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#1D4EAF"><Template>12</Template></Font></Text></PartText>
+                    <PartText x="341" y="187" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#1D4EAF"><Template>03</Template></Font></Text></PartText>
+                    <PartText x="186" y="341" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#1D4EAF"><Template>06</Template></Font></Text></PartText>
+                    <PartText x="31" y="187" width="28" height="26"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#1D4EAF"><Template>09</Template></Font></Text></PartText>
+                </Group>
+                <PartText x="80" y="96" width="240" height="12">
+                    <Variant mode="AMBIENT" target="alpha" value="0"/>
+                    <Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#D91D4EAF"><Template>J-04 · KNIGHT</Template></Font></Text>
+                </PartText>
+                <Group x="160" y="248" width="80" height="22">
+                    <Variant mode="AMBIENT" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="80" height="22">
+                        <RoundRectangle x="0" y="0" width="80" height="22" cornerRadiusX="4" cornerRadiusY="4">
+                            <Stroke color="#661D4EAF" thickness="0.8"/>
+                            <Fill color="#FFECE1C2"/>
+                        </RoundRectangle>
+                    </PartDraw>
+                    <DigitalClock x="0" y="0" width="80" height="22">
+                        <TimeText x="0" y="0" width="80" height="22" format="hh:mm:ss" hourFormat="SYNC_TO_DEVICE" align="CENTER">
+                            <Font family="SYNC_TO_DEVICE" size="11" weight="BOLD" color="#1D4EAF"/>
+                        </TimeText>
+                    </DigitalClock>
+                </Group>
+                <PartText x="60" y="330" width="280" height="12">
+                    <Variant mode="AMBIENT" target="alpha" value="0"/>
+                    <Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8C1D4EAF"><Template>THERE IS NO EMOTION</Template></Font></Text>
+                </PartText>
+                <Group x="0" y="0" width="400" height="400" name="jedi_hands">
+                    <AnalogClock x="0" y="0" width="400" height="400">
+                        <HourHand resource="jedi_hand_hour" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
+                        <MinuteHand resource="jedi_hand_minute" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
+                        <SecondHand resource="jedi_hand_second" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5">
+                            <Variant mode="AMBIENT" target="alpha" value="0"/>
+                        </SecondHand>
+                    </AnalogClock>
+                    <PartImage x="0" y="0" width="400" height="400"><Image resource="jedi_pivot"/></PartImage>
+                </Group>
+            </ListOption>
+        </ListConfiguration>
+
+        <!-- Complication slots -->
+        <ComplicationSlot slotId="1" x="94" y="114" width="48" height="32" supportedTypes="SHORT_TEXT">
+            <DefaultProviderPolicy defaultSystemProvider="WATCH_BATTERY" defaultSystemProviderType="SHORT_TEXT"/>
+            <BoundingBox x="0" y="0" width="48" height="32"/>
+            <Complication type="SHORT_TEXT">
+                <Placeholder><PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw></Placeholder>
+
+                <!-- Rebels Theme (0) -->
+                <Group x="0" y="0" width="48" height="32">
+                    <Variant expression="[CONFIGURATION.theme] != 0" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFFA726"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                    <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#FFA726"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                </Group>
+
+                <!-- Dark Theme (1) -->
+                <Group x="0" y="0" width="48" height="32">
+                    <Variant expression="[CONFIGURATION.theme] != 1" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#59FF2D3A" thickness="0.8"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                    <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#FF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                </Group>
+
+                <!-- Jedi Theme (2) -->
+                <Group x="0" y="0" width="48" height="32">
+                    <Variant expression="[CONFIGURATION.theme] != 2" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#661D4EAF" thickness="0.8"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8C1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                    <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                </Group>
+            </Complication>
+        </ComplicationSlot>
+
+        <ComplicationSlot slotId="2" x="258" y="114" width="48" height="32" supportedTypes="SHORT_TEXT">
+            <DefaultProviderPolicy defaultSystemProvider="HEART_RATE" defaultSystemProviderType="SHORT_TEXT"/>
+            <BoundingBox x="0" y="0" width="48" height="32"/>
+            <Complication type="SHORT_TEXT">
+                <Placeholder><PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw></Placeholder>
+
+                <!-- Rebels Theme (0) -->
+                <Group x="0" y="0" width="48" height="32">
+                    <Variant expression="[CONFIGURATION.theme] != 0" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFFA726"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                    <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#FFE63946"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                </Group>
+
+                <!-- Dark Theme (1) -->
+                <Group x="0" y="0" width="48" height="32">
+                    <Variant expression="[CONFIGURATION.theme] != 1" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#59FF2D3A" thickness="0.8"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                    <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#FFFF8A90"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                </Group>
+
+                <!-- Jedi Theme (2) -->
+                <Group x="0" y="0" width="48" height="32">
+                    <Variant expression="[CONFIGURATION.theme] != 2" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="48" height="32"><RoundRectangle x="0" y="0" width="48" height="32" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#661D4EAF" thickness="0.8"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="0" width="48" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8C1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                    <PartText x="0" y="12" width="48" height="20"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="14" weight="BOLD" color="#FFA55A1A"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                </Group>
+            </Complication>
+        </ComplicationSlot>
+
+        <ComplicationSlot slotId="3" x="93" y="181" width="54" height="38" supportedTypes="SHORT_TEXT">
+            <DefaultProviderPolicy defaultSystemProvider="DATE" defaultSystemProviderType="SHORT_TEXT"/>
+            <BoundingBox x="0" y="0" width="54" height="38"/>
+            <Complication type="SHORT_TEXT">
+                <Placeholder><PartDraw x="0" y="0" width="54" height="38"><RoundRectangle x="0" y="0" width="54" height="38" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw></Placeholder>
+
+                <!-- Rebels Theme (0) -->
+                <Group x="0" y="0" width="54" height="38">
+                    <Variant expression="[CONFIGURATION.theme] != 0" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="54" height="38"><RoundRectangle x="0" y="0" width="54" height="38" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#6BFFA726" thickness="0.8"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="1" width="54" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFFA726"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                    <PartText x="0" y="14" width="54" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FFA726"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                </Group>
+
+                <!-- Dark Theme (1) -->
+                <Group x="0" y="0" width="54" height="38">
+                    <Variant expression="[CONFIGURATION.theme] != 1" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="54" height="38"><RoundRectangle x="0" y="0" width="54" height="38" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#59FF2D3A" thickness="0.8"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="1" width="54" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                    <PartText x="0" y="14" width="54" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                </Group>
+
+                <!-- Jedi Theme (2) -->
+                <Group x="0" y="0" width="54" height="38">
+                    <Variant expression="[CONFIGURATION.theme] != 2" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="54" height="38"><RoundRectangle x="0" y="0" width="54" height="38" cornerRadiusX="6" cornerRadiusY="6"><Stroke color="#661D4EAF" thickness="0.8"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="1" width="54" height="12"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8C1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                    <PartText x="0" y="14" width="54" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                </Group>
+            </Complication>
+        </ComplicationSlot>
+
+        <ComplicationSlot slotId="4" x="254" y="174" width="52" height="66" supportedTypes="RANGED_VALUE SHORT_TEXT">
+            <DefaultProviderPolicy defaultSystemProvider="STEP_COUNT" defaultSystemProviderType="SHORT_TEXT"/>
+            <BoundingBox x="0" y="0" width="52" height="66"/>
+            <Complication type="SHORT_TEXT">
+                <Placeholder><PartText x="1" y="14" width="50" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FFA726"/><Template>--</Template></Text></PartText></Placeholder>
+
+                <!-- Rebels Theme (0) -->
+                <Group x="0" y="0" width="52" height="66">
+                    <Variant expression="[CONFIGURATION.theme] != 0" target="alpha" value="0"/>
+                    <PartText x="1" y="14" width="50" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FFA726"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                    <PartText x="1" y="52" width="50" height="14"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFFA726"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                </Group>
+
+                <!-- Dark Theme (1) -->
+                <Group x="0" y="0" width="52" height="66">
+                    <Variant expression="[CONFIGURATION.theme] != 1" target="alpha" value="0"/>
+                    <PartText x="1" y="14" width="50" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                    <PartText x="1" y="52" width="50" height="14"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                </Group>
+
+                <!-- Jedi Theme (2) -->
+                <Group x="0" y="0" width="52" height="66">
+                    <Variant expression="[CONFIGURATION.theme] != 2" target="alpha" value="0"/>
+                    <PartText x="1" y="14" width="50" height="24"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                    <PartText x="1" y="52" width="50" height="14"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8C1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                </Group>
+            </Complication>
+
+            <Complication type="RANGED_VALUE">
+                <Placeholder><PartDraw x="0" y="0" width="52" height="52"><Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="225"><Stroke color="#6BFFA726" thickness="3" cap="ROUND"/></Arc></PartDraw></Placeholder>
+
+                <!-- Rebels Theme (0) -->
+                <Group x="0" y="0" width="52" height="66">
+                    <Variant expression="[CONFIGURATION.theme] != 0" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="52" height="52">
+                        <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="225"><Stroke color="#6BFFA726" thickness="3" cap="ROUND"/></Arc>
+                        <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#FFA726" thickness="3" cap="ROUND"/></Arc>
+                    </PartDraw>
+                    <PartText x="1" y="15" width="50" height="22"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FFA726"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                    <PartText x="1" y="52" width="50" height="14"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFFA726"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                </Group>
+
+                <!-- Dark Theme (1) -->
+                <Group x="0" y="0" width="52" height="66">
+                    <Variant expression="[CONFIGURATION.theme] != 1" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="52" height="52">
+                        <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="225"><Stroke color="#59FF2D3A" thickness="3" cap="ROUND"/></Arc>
+                        <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#FF2D3A" thickness="3" cap="ROUND"/></Arc>
+                    </PartDraw>
+                    <PartText x="1" y="15" width="50" height="22"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#FF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                    <PartText x="1" y="52" width="50" height="14"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8CFF2D3A"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                </Group>
+
+                <!-- Jedi Theme (2) -->
+                <Group x="0" y="0" width="52" height="66">
+                    <Variant expression="[CONFIGURATION.theme] != 2" target="alpha" value="0"/>
+                    <PartDraw x="0" y="0" width="52" height="52">
+                        <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="225"><Stroke color="#661D4EAF" thickness="3" cap="ROUND"/></Arc>
+                        <Arc centerX="26" centerY="26" width="52" height="52" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#1D4EAF" thickness="3" cap="ROUND"/></Arc>
+                    </PartDraw>
+                    <PartText x="1" y="15" width="50" height="22"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="16" weight="BOLD" color="#1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Text></PartText>
+                    <PartText x="1" y="52" width="50" height="14"><Text align="CENTER"><Font family="SYNC_TO_DEVICE" size="7" weight="MEDIUM" color="#8C1D4EAF"/><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Text></PartText>
+                </Group>
+            </Complication>
+        </ComplicationSlot>
+    </Scene>
+</WatchFace>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <!--
+      Watch Face Format bundles are resource-only – hasCode must be false.
+      WFF version 3 targets Wear OS 5.1+ (API 35).
+    -->
+    <application
+        android:hasCode="false"
+        android:label="@string/watch_face_name"
+        android:icon="@drawable/rebels_background">
+
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <!-- Declare Watch Face Format version (3 = Wear OS 5.1 / API 35) -->
+        <property
+            android:name="com.google.wear.watchface.format.version"
+            android:value="3" />
+
+        <property
+            android:name="com.google.wear.watchface.format.publisher"
+            android:value="Rebels-WFF-1.0" />
+
+    </application>
+
+</manifest>

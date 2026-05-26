@@ -1,0 +1,25 @@
+<WatchFaceInfo>
+    <!-- Preview image shown in the watch face picker -->
+    <Preview value="@drawable/preview" />
+
+    <!--
+      Category shown in the picker – use the device manufacturer's category
+      constant or leave as CATEGORY_EMPTY to group with uncategorised faces.
+    -->
+    <Category value="CATEGORY_EMPTY" />
+
+    <!-- Allow the face to appear in retail demo mode -->
+    <AvailableInRetail value="false" />
+
+    <!-- Users can save multiple copies of this face with different themes -->
+    <MultipleInstancesAllowed value="true" />
+
+    <!--
+      Editable = true because the face exposes a ListConfiguration
+      (theme picker) and four complication slots.
+    -->
+    <Editable value="true" />
+
+    <!-- Flavors not used in this version -->
+    <FlavorsSupported value="false" />
+</WatchFaceInfo>

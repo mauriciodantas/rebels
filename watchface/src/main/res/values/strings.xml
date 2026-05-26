@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="watch_face_name">Rebels Watchface</string>
+
+    <!-- Theme configuration labels (shown in watch face picker) -->
+    <string name="config_theme_label">Theme</string>
+    <string name="config_theme_rebels">Rebel Squadron</string>
+    <string name="config_theme_dark">Dark Force</string>
+    <string name="config_theme_jedi">Jedi Order</string>
+</resources>
