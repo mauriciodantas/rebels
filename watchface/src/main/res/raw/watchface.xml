@@ -9,9 +9,9 @@
             displayName="@string/config_theme_label"
             defaultValue="0"
             screenReaderText="@string/config_theme_label">
-            <ListOption id="0" displayName="@string/config_theme_rebels" screenReaderText="@string/config_theme_rebels"/>
-            <ListOption id="1" displayName="@string/config_theme_dark" screenReaderText="@string/config_theme_dark"/>
-            <ListOption id="2" displayName="@string/config_theme_jedi" screenReaderText="@string/config_theme_jedi"/>
+            <ListOption id="0" displayName="@string/config_theme_rebels" screenReaderText="@string/config_theme_rebels" icon="rebels_theme_preview"/>
+            <ListOption id="1" displayName="@string/config_theme_dark" screenReaderText="@string/config_theme_dark" icon="dark_theme_preview"/>
+            <ListOption id="2" displayName="@string/config_theme_jedi" screenReaderText="@string/config_theme_jedi" icon="jedi_theme_preview"/>
         </ListConfiguration>
     </UserConfigurations>
 
