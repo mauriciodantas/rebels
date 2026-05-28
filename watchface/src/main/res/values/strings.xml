@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="watch_face_name">Rebels Watchface</string>
+    <string name="watch_face_name">Rebels</string>
 
     <!-- Theme configuration labels (shown in watch face picker) -->
     <string name="config_theme_label">Theme</string>

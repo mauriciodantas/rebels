@@ -20,6 +20,4 @@
     -->
     <Editable value="true" />
 
-    <!-- Flavors not used in this version -->
-    <FlavorsSupported value="false" />
 </WatchFaceInfo>
