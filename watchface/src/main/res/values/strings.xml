@@ -7,4 +7,7 @@
     <string name="config_theme_rebels">Rebel Squadron</string>
     <string name="config_theme_dark">Dark Force</string>
     <string name="config_theme_jedi">Jedi Order</string>
+
+    <!-- Second hand configuration -->
+    <string name="config_sabre_label">Lightsaber Second Hand</string>
 </resources>

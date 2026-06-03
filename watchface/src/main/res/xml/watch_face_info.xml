@@ -1,6 +1,6 @@
 <WatchFaceInfo>
     <!-- Preview image shown in the watch face picker -->
-    <Preview value="@drawable/preview" />
+    <Preview value="@drawable/rebels_theme_preview" />
 
     <!--
       Category shown in the picker – use the device manufacturer's category
