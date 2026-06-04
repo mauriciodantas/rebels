@@ -29,7 +29,7 @@
         <Group x="0" y="0" width="400" height="400" name="rebels_background_group">
             <Transform target="alpha" value="[CONFIGURATION.theme] == 0 ? 255 : 0"/>
             <PartDraw x="0" y="0" width="400" height="400"><Rectangle x="0" y="0" width="400" height="400"><Fill color="#FF000000"/></Rectangle></PartDraw>
-            <PartImage x="0" y="0" width="400" height="400"><Image resource="rebels_background"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="rebels_background"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="rebels_pattern"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="rebels_ticks"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="rebels_sigil"/></PartImage>
@@ -53,7 +53,7 @@
         <Group x="0" y="0" width="400" height="400" name="dark_background_group">
             <Transform target="alpha" value="[CONFIGURATION.theme] == 1 ? 255 : 0"/>
             <PartDraw x="0" y="0" width="400" height="400"><Rectangle x="0" y="0" width="400" height="400"><Fill color="#FF000000"/></Rectangle></PartDraw>
-            <PartImage x="0" y="0" width="400" height="400"><Image resource="dark_background"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="dark_background"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="dark_pattern"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="dark_ticks"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="dark_sigil"/></PartImage>
@@ -77,7 +77,7 @@
         <Group x="0" y="0" width="400" height="400" name="jedi_background_group">
             <Transform target="alpha" value="[CONFIGURATION.theme] == 2 ? 255 : 0"/>
             <PartDraw x="0" y="0" width="400" height="400"><Rectangle x="0" y="0" width="400" height="400"><Fill color="#FF000000"/></Rectangle></PartDraw>
-            <PartImage x="0" y="0" width="400" height="400"><Image resource="jedi_background"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="jedi_background"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="jedi_pattern"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="jedi_ticks"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="jedi_sigil"/></PartImage>
@@ -101,7 +101,7 @@
         <Group x="0" y="0" width="400" height="400" name="bb8_background_group">
             <Transform target="alpha" value="[CONFIGURATION.theme] == 3 ? 255 : 0"/>
             <PartDraw x="0" y="0" width="400" height="400"><Rectangle x="0" y="0" width="400" height="400"><Fill color="#FF000000"/></Rectangle></PartDraw>
-            <PartImage x="0" y="0" width="400" height="400"><Image resource="bb8_background"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="bb8_background"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="bb8_pattern"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="bb8_ticks"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="bb8_sigil"/></PartImage>
@@ -125,7 +125,7 @@
         <Group x="0" y="0" width="400" height="400" name="r2_background_group">
             <Transform target="alpha" value="[CONFIGURATION.theme] == 4 ? 255 : 0"/>
             <PartDraw x="0" y="0" width="400" height="400"><Rectangle x="0" y="0" width="400" height="400"><Fill color="#FF000000"/></Rectangle></PartDraw>
-            <PartImage x="0" y="0" width="400" height="400"><Image resource="r2_background"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="r2_background"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="r2_pattern"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="r2_ticks"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="r2_sigil"/></PartImage>
@@ -149,7 +149,7 @@
         <Group x="0" y="0" width="400" height="400" name="yoda_background_group">
             <Transform target="alpha" value="[CONFIGURATION.theme] == 5 ? 255 : 0"/>
             <PartDraw x="0" y="0" width="400" height="400"><Rectangle x="0" y="0" width="400" height="400"><Fill color="#FF000000"/></Rectangle></PartDraw>
-            <PartImage x="0" y="0" width="400" height="400"><Image resource="yoda_background"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="yoda_background"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="yoda_pattern"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="yoda_ticks"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="yoda_sigil"/></PartImage>
@@ -177,49 +177,49 @@
                 <!-- Rebels (0) -->
                 <Group x="0" y="0" width="90" height="60" name="slot1_rebels">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 0 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BFFA726" thickness="1.2"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFFA726"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFA726"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BFFA726" thickness="1.2"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFFA726"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFA726"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Dark (1) -->
                 <Group x="0" y="0" width="90" height="60" name="slot1_dark">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 1 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#59FF2D3A" thickness="1.2"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#59FF2D3A" thickness="1.2"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Jedi (2) -->
                 <Group x="0" y="0" width="90" height="60" name="slot1_jedi">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 2 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#661D4EAF" thickness="1.2"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#661D4EAF" thickness="1.2"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- BB8 (3) -->
                 <Group x="0" y="0" width="90" height="60" name="slot1_bb8">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 3 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BE8590C" thickness="1.2"/><Fill color="#FFEAE3D4"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CE8590C"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFE8590C"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BE8590C" thickness="1.2"/><Fill color="#FFEAE3D4"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CE8590C"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFE8590C"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- R2 (4) -->
                 <Group x="0" y="0" width="90" height="60" name="slot1_r2">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 4 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B1565C0" thickness="1.2"/><Fill color="#FFE0E7EE"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1565C0"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF1565C0"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B1565C0" thickness="1.2"/><Fill color="#FFE0E7EE"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1565C0"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF1565C0"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Yoda (5) -->
                 <Group x="0" y="0" width="90" height="60" name="slot1_yoda">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 5 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B8BC34A" thickness="1.2"/><Fill color="#FF1D2613"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B8BC34A" thickness="1.2"/><Fill color="#FF1D2613"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
             </Complication>
         </ComplicationSlot>
@@ -231,49 +231,49 @@
                 <!-- Rebels (0) -->
                 <Group x="0" y="0" width="90" height="60" name="slot2_rebels">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 0 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BFFA726" thickness="1.2"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFFA726"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFE63946"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BFFA726" thickness="1.2"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFFA726"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFE63946"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Dark (1) -->
                 <Group x="0" y="0" width="90" height="60" name="slot2_dark">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 1 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#59FF2D3A" thickness="1.2"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFFF8A90"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#59FF2D3A" thickness="1.2"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFFF8A90"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Jedi (2) -->
                 <Group x="0" y="0" width="90" height="60" name="slot2_jedi">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 2 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#661D4EAF" thickness="1.2"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFA55A1A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#661D4EAF" thickness="1.2"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFA55A1A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- BB8 (3) -->
                 <Group x="0" y="0" width="90" height="60" name="slot2_bb8">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 3 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BE8590C" thickness="1.2"/><Fill color="#FFEAE3D4"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CE8590C"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF37332F"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BE8590C" thickness="1.2"/><Fill color="#FFEAE3D4"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CE8590C"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF37332F"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- R2 (4) -->
                 <Group x="0" y="0" width="90" height="60" name="slot2_r2">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 4 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B1565C0" thickness="1.2"/><Fill color="#FFE0E7EE"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1565C0"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFE63946"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B1565C0" thickness="1.2"/><Fill color="#FFE0E7EE"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1565C0"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFE63946"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Yoda (5) -->
                 <Group x="0" y="0" width="90" height="60" name="slot2_yoda">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 5 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B8BC34A" thickness="1.2"/><Fill color="#FF1D2613"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFC8924A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B8BC34A" thickness="1.2"/><Fill color="#FF1D2613"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFC8924A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
             </Complication>
         </ComplicationSlot>
@@ -285,49 +285,49 @@
                 <!-- Rebels (0) -->
                 <Group x="0" y="0" width="90" height="60" name="slot3_rebels">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 0 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BFFA726" thickness="1.2"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFFA726"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFA726"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BFFA726" thickness="1.2"/><Fill color="#FF221E16"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFFA726"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFA726"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Dark (1) -->
                 <Group x="0" y="0" width="90" height="60" name="slot3_dark">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 1 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#59FF2D3A" thickness="1.2"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#59FF2D3A" thickness="1.2"/><Fill color="#FF180609"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Jedi (2) -->
                 <Group x="0" y="0" width="90" height="60" name="slot3_jedi">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 2 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#661D4EAF" thickness="1.2"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#661D4EAF" thickness="1.2"/><Fill color="#FFECE1C2"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- BB8 (3) -->
                 <Group x="0" y="0" width="90" height="60" name="slot3_bb8">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 3 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BE8590C" thickness="1.2"/><Fill color="#FFEAE3D4"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CE8590C"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFE8590C"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6BE8590C" thickness="1.2"/><Fill color="#FFEAE3D4"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CE8590C"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFE8590C"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- R2 (4) -->
                 <Group x="0" y="0" width="90" height="60" name="slot3_r2">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 4 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B1565C0" thickness="1.2"/><Fill color="#FFE0E7EE"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1565C0"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF1565C0"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B1565C0" thickness="1.2"/><Fill color="#FFE0E7EE"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1565C0"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF1565C0"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Yoda (5) -->
                 <Group x="0" y="0" width="90" height="60" name="slot3_yoda">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 5 ? 255 : 0"/>
-                    <PartDraw x="0" y="0" width="90" height="60"><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B8BC34A" thickness="1.2"/><Fill color="#FF1D2613"/></RoundRectangle></PartDraw>
-                    <PartText x="0" y="4" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="20" width="90" height="36"><Text><Font family="orbitron" size="24" weight="BOLD" color="#8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B8BC34A" thickness="1.2"/><Fill color="#FF1D2613"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
             </Complication>
         </ComplicationSlot>
@@ -339,43 +339,43 @@
                 <!-- Rebels (0) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_rebels_text">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 0 ? 255 : 0"/>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFA726"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFFA726"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFA726"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFFA726"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Dark (1) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_dark_text">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 1 ? 255 : 0"/>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Jedi (2) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_jedi_text">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 2 ? 255 : 0"/>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- BB8 (3) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_bb8_text">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 3 ? 255 : 0"/>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#E8590C"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CE8590C"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#E8590C"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CE8590C"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- R2 (4) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_r2_text">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 4 ? 255 : 0"/>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#1565C0"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1565C0"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#1565C0"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1565C0"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Yoda (5) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_yoda_text">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 5 ? 255 : 0"/>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TEXT] == '' ? '--' : [COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
             </Complication>
 
@@ -383,73 +383,73 @@
                 <!-- Rebels (0) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_rebels_ranged">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 0 ? 255 : 0"/>
-                    <PartDraw x="5" y="5" width="80" height="80">
+                    <PartDraw x="5" y="5" width="80" height="80"><Variant mode="AMBIENT" target="alpha" value="0"/>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="225"><Stroke color="#6BFFA726" thickness="4" cap="ROUND"/></Arc>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#FFA726" thickness="4" cap="ROUND"/></Arc>
                     </PartDraw>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFA726"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="50" width="90" height="15"><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8CFFA726"><Template>/10K</Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFFA726"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFA726"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="50" width="90" height="15"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8CFFA726"><Template>/10K</Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFFA726"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Dark (1) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_dark_ranged">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 1 ? 255 : 0"/>
-                    <PartDraw x="5" y="5" width="80" height="80">
+                    <PartDraw x="5" y="5" width="80" height="80"><Variant mode="AMBIENT" target="alpha" value="0"/>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="225"><Stroke color="#59FF2D3A" thickness="4" cap="ROUND"/></Arc>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#FF2D3A" thickness="4" cap="ROUND"/></Arc>
                     </PartDraw>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="50" width="90" height="15"><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8CFF2D3A"><Template>/10K</Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="50" width="90" height="15"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8CFF2D3A"><Template>/10K</Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFF2D3A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Jedi (2) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_jedi_ranged">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 2 ? 255 : 0"/>
-                    <PartDraw x="5" y="5" width="80" height="80">
+                    <PartDraw x="5" y="5" width="80" height="80"><Variant mode="AMBIENT" target="alpha" value="0"/>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="225"><Stroke color="#661D4EAF" thickness="4" cap="ROUND"/></Arc>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#1D4EAF" thickness="4" cap="ROUND"/></Arc>
                     </PartDraw>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="50" width="90" height="15"><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8C1D4EAF"><Template>/10K</Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="50" width="90" height="15"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8C1D4EAF"><Template>/10K</Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1D4EAF"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- BB8 (3) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_bb8_ranged">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 3 ? 255 : 0"/>
-                    <PartDraw x="5" y="5" width="80" height="80">
+                    <PartDraw x="5" y="5" width="80" height="80"><Variant mode="AMBIENT" target="alpha" value="0"/>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="225"><Stroke color="#6BE8590C" thickness="4" cap="ROUND"/></Arc>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#E8590C" thickness="4" cap="ROUND"/></Arc>
                     </PartDraw>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#E8590C"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="50" width="90" height="15"><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8CE8590C"><Template>/10K</Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CE8590C"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#E8590C"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="50" width="90" height="15"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8CE8590C"><Template>/10K</Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CE8590C"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- R2 (4) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_r2_ranged">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 4 ? 255 : 0"/>
-                    <PartDraw x="5" y="5" width="80" height="80">
+                    <PartDraw x="5" y="5" width="80" height="80"><Variant mode="AMBIENT" target="alpha" value="0"/>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="225"><Stroke color="#6B1565C0" thickness="4" cap="ROUND"/></Arc>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#1565C0" thickness="4" cap="ROUND"/></Arc>
                     </PartDraw>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#1565C0"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="50" width="90" height="15"><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8C1565C0"><Template>/10K</Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1565C0"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#1565C0"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="50" width="90" height="15"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8C1565C0"><Template>/10K</Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C1565C0"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
 
                 <!-- Yoda (5) -->
                 <Group x="0" y="0" width="90" height="90" name="slot4_yoda_ranged">
                     <Transform target="alpha" value="[CONFIGURATION.theme] == 5 ? 255 : 0"/>
-                    <PartDraw x="5" y="5" width="80" height="80">
+                    <PartDraw x="5" y="5" width="80" height="80"><Variant mode="AMBIENT" target="alpha" value="0"/>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="225"><Stroke color="#6B8BC34A" thickness="4" cap="ROUND"/></Arc>
                         <Arc centerX="40" centerY="40" width="80" height="80" startAngle="315" endAngle="(315 + (270 * [COMPLICATION.RANGED_VALUE_FRACTION]))"><Stroke color="#8BC34A" thickness="4" cap="ROUND"/></Arc>
                     </PartDraw>
-                    <PartText x="0" y="25" width="90" height="30"><Text><Font family="orbitron" size="24" weight="BOLD" color="#8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
-                    <PartText x="0" y="50" width="90" height="15"><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8C8BC34A"><Template>/10K</Template></Font></Text></PartText>
-                    <PartText x="0" y="72" width="90" height="16"><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="25" width="90" height="30"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="50" width="90" height="15"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_bold" size="10" weight="BOLD" color="#8C8BC34A"><Template>/10K</Template></Font></Text></PartText>
+                    <PartText x="0" y="72" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                 </Group>
             </Complication>
         </ComplicationSlot>
