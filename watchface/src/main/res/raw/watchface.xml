@@ -16,6 +16,8 @@
             <ListOption id="3" displayName="@string/config_theme_bb8" screenReaderText="@string/config_theme_bb8" icon="bb8_theme_preview"/>
             <ListOption id="4" displayName="@string/config_theme_r2" screenReaderText="@string/config_theme_r2" icon="r2_theme_preview"/>
             <ListOption id="5" displayName="@string/config_theme_yoda" screenReaderText="@string/config_theme_yoda" icon="yoda_theme_preview"/>
+            <ListOption id="6" displayName="@string/config_theme_c3po" screenReaderText="@string/config_theme_c3po" icon="c3po_theme_preview"/>
+            <ListOption id="7" displayName="@string/config_theme_kylo" screenReaderText="@string/config_theme_kylo" icon="kylo_theme_preview"/>
         </ListConfiguration>
         <BooleanConfiguration
             id="sabre_hand"
@@ -169,6 +171,52 @@
             </PartText>
         </Group>
 
+        <Group x="0" y="0" width="400" height="400" name="c3po_background_group">
+            <Transform target="alpha" value="[CONFIGURATION.theme] == 6 ? 255 : 0"/>
+            <PartDraw x="0" y="0" width="400" height="400"><Rectangle x="0" y="0" width="400" height="400"><Fill color="#FF000000"/></Rectangle></PartDraw>
+            <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="c3po_background"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="c3po_pattern"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Image resource="c3po_ticks"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Image resource="c3po_sigil"/></PartImage>
+            <Group x="0" y="0" width="400" height="400" name="c3po_numerals">
+                <PartText x="180" y="20" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF7A5212"><Template>12</Template></Font></Text></PartText>
+                <PartText x="340" y="180" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF7A5212"><Template>03</Template></Font></Text></PartText>
+                <PartText x="180" y="340" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF7A5212"><Template>06</Template></Font></Text></PartText>
+                <PartText x="20" y="180" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF7A5212"><Template>09</Template></Font></Text></PartText>
+            </Group>
+            <PartText x="80" y="82" width="240" height="24">
+                <Variant mode="AMBIENT" target="alpha" value="0"/>
+                <Text><Font family="jetbrains_mono_regular" size="14" weight="MEDIUM" color="#D97A5212"><Template>3PO · PROTOCOL</Template></Font></Text>
+            </PartText>
+            <PartText x="60" y="322" width="280" height="24">
+                <Variant mode="AMBIENT" target="alpha" value="0"/>
+                <Text><Font family="jetbrains_mono_regular" size="14" weight="MEDIUM" color="#8C7A5212"><Template>SIX MILLION FORMS</Template></Font></Text>
+            </PartText>
+        </Group>
+
+        <Group x="0" y="0" width="400" height="400" name="kylo_background_group">
+            <Transform target="alpha" value="[CONFIGURATION.theme] == 7 ? 255 : 0"/>
+            <PartDraw x="0" y="0" width="400" height="400"><Rectangle x="0" y="0" width="400" height="400"><Fill color="#FF000000"/></Rectangle></PartDraw>
+            <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="kylo_background"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="kylo_pattern"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Image resource="kylo_ticks"/></PartImage>
+            <PartImage x="0" y="0" width="400" height="400"><Image resource="kylo_sigil"/></PartImage>
+            <Group x="0" y="0" width="400" height="400" name="kylo_numerals">
+                <PartText x="180" y="20" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FFFF3B20"><Template>12</Template></Font></Text></PartText>
+                <PartText x="340" y="180" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FFFF3B20"><Template>03</Template></Font></Text></PartText>
+                <PartText x="180" y="340" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FFFF3B20"><Template>06</Template></Font></Text></PartText>
+                <PartText x="20" y="180" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FFFF3B20"><Template>09</Template></Font></Text></PartText>
+            </Group>
+            <PartText x="80" y="82" width="240" height="24">
+                <Variant mode="AMBIENT" target="alpha" value="0"/>
+                <Text><Font family="jetbrains_mono_regular" size="14" weight="MEDIUM" color="#D9FF3B20"><Template>KR-001 · COMMANDER</Template></Font></Text>
+            </PartText>
+            <PartText x="60" y="322" width="280" height="24">
+                <Variant mode="AMBIENT" target="alpha" value="0"/>
+                <Text><Font family="jetbrains_mono_regular" size="14" weight="MEDIUM" color="#8CFF3B20"><Template>LET THE PAST DIE</Template></Font></Text>
+            </PartText>
+        </Group>
+
         <!-- Complication slots - Positioned BEFORE hands to be underneath them -->
         <ComplicationSlot slotId="1" x="80" y="105" width="90" height="60" supportedTypes="SHORT_TEXT">
             <DefaultProviderPolicy defaultSystemProvider="WATCH_BATTERY" defaultSystemProviderType="SHORT_TEXT"/>
@@ -220,6 +268,22 @@
                     <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B8BC34A" thickness="1.2"/><Fill color="#FF1D2613"/></RoundRectangle></PartDraw>
                     <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
                     <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#8BC34A"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                </Group>
+
+                <!-- C3PO (6) -->
+                <Group x="0" y="0" width="90" height="60" name="slot1_c3po">
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 6 ? 255 : 0"/>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#6B7A5212" thickness="1.2"/><Fill color="#FFF5E4B0"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8C7A5212"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FF7A5212"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
+                </Group>
+
+                <!-- Kylo (7) -->
+                <Group x="0" y="0" width="90" height="60" name="slot1_kylo">
+                    <Transform target="alpha" value="[CONFIGURATION.theme] == 7 ? 255 : 0"/>
+                    <PartDraw x="0" y="0" width="90" height="60"><Variant mode="AMBIENT" target="alpha" value="0"/><RoundRectangle x="0" y="0" width="90" height="60" cornerRadiusX="8" cornerRadiusY="8"><Stroke color="#59FF3B20" thickness="1.2"/><Fill color="#FF1F1310"/></RoundRectangle></PartDraw>
+                    <PartText x="0" y="4" width="90" height="16"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="jetbrains_mono_regular" size="10" weight="MEDIUM" color="#8CFF3B20"><Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template></Font></Text></PartText>
+                    <PartText x="0" y="20" width="90" height="36"><Variant mode="AMBIENT" target="alpha" value="0"/><Text><Font family="orbitron" size="24" weight="BOLD" color="#FFFF3B20"><Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template></Font></Text></PartText>
                 </Group>
             </Complication>
         </ComplicationSlot>
@@ -767,6 +831,112 @@
                     </Group>
                 </Group>
                 <PartImage x="0" y="0" width="400" height="400"><Image resource="yoda_pivot"/></PartImage>
+            </Group>
+        </Group>
+
+        <!-- C3PO -->
+        <Group x="0" y="0" width="400" height="400" name="c3po_hands_group">
+            <Transform target="alpha" value="[CONFIGURATION.theme] == 6 ? 255 : 0"/>
+            <Group x="145" y="275" width="110" height="36" name="c3po_digital_clock">
+                <Variant mode="AMBIENT" target="alpha" value="0"/>
+                <PartDraw x="0" y="0" width="110" height="36">
+                    <RoundRectangle x="0" y="0" width="110" height="36" cornerRadiusX="6" cornerRadiusY="6">
+                        <Stroke color="#597A5212" thickness="1.0"/>
+                        <Fill color="#FFF5E4B0"/>
+                    </RoundRectangle>
+                </PartDraw>
+                <DigitalClock x="0" y="0" width="110" height="36">
+                    <TimeText x="0" y="0" width="110" height="36" format="hh:mm:ss">
+                        <Font family="orbitron" size="16" weight="BOLD" color="#FF7A5212"/>
+                    </TimeText>
+                </DigitalClock>
+            </Group>
+            <Group x="0" y="0" width="400" height="400" name="c3po_hands">
+                <AnalogClock x="0" y="0" width="400" height="400">
+                    <HourHand resource="c3po_hand_hour" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
+                    <MinuteHand resource="c3po_hand_minute" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
+                </AnalogClock>
+                <Group x="0" y="0" width="400" height="400" name="c3po_second_normal">
+                    <Transform target="alpha" value="[CONFIGURATION.sabre_hand] ? 0 : 255"/>
+                    <AnalogClock x="0" y="0" width="400" height="400">
+                        <SecondHand resource="c3po_hand_second" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5">
+                            <Variant mode="AMBIENT" target="alpha" value="0"/>
+                        </SecondHand>
+                    </AnalogClock>
+                </Group>
+                <Group x="0" y="0" width="400" height="400" name="c3po_second_sabre">
+                    <Transform target="alpha" value="[CONFIGURATION.sabre_hand] ? 255 : 0"/>
+                    <Group x="0" y="0" width="400" height="400" name="c3po_sabre_movement">
+                        <Transform target="angle" value="[SECOND] * 6 + [MILLISECOND] * 0.006"/>
+                        <Variant mode="AMBIENT" target="alpha" value="0"/>
+                        <PartDraw x="196" y="45" width="8" height="145">
+                            <Rectangle x="0" y="0" width="8" height="145"><Fill color="#807A5212"/></Rectangle>
+                        </PartDraw>
+                        <PartDraw x="198" y="47" width="4" height="141">
+                            <Rectangle x="0" y="0" width="4" height="141"><Fill color="#FFFFFFFF"/></Rectangle>
+                        </PartDraw>
+                        <PartDraw x="197" y="190" width="6" height="25">
+                            <Rectangle x="0" y="0" width="6" height="25"><Fill color="#FF888888"/></Rectangle>
+                        </PartDraw>
+                    </Group>
+                </Group>
+                <PartImage x="0" y="0" width="400" height="400"><Image resource="c3po_pivot"/></PartImage>
+            </Group>
+        </Group>
+
+        <!-- KYLO -->
+        <Group x="0" y="0" width="400" height="400" name="kylo_hands_group">
+            <Transform target="alpha" value="[CONFIGURATION.theme] == 7 ? 255 : 0"/>
+            <Group x="145" y="275" width="110" height="36" name="kylo_digital_clock">
+                <Variant mode="AMBIENT" target="alpha" value="0"/>
+                <PartDraw x="0" y="0" width="110" height="36">
+                    <RoundRectangle x="0" y="0" width="110" height="36" cornerRadiusX="6" cornerRadiusY="6">
+                        <Stroke color="#59FF3B20" thickness="1.0"/>
+                        <Fill color="#FF1F1310"/>
+                    </RoundRectangle>
+                </PartDraw>
+                <DigitalClock x="0" y="0" width="110" height="36">
+                    <TimeText x="0" y="0" width="110" height="36" format="hh:mm:ss">
+                        <Font family="orbitron" size="16" weight="BOLD" color="#FFFF3B20"/>
+                    </TimeText>
+                </DigitalClock>
+            </Group>
+            <Group x="0" y="0" width="400" height="400" name="kylo_hands">
+                <AnalogClock x="0" y="0" width="400" height="400">
+                    <HourHand resource="kylo_hand_hour" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
+                    <MinuteHand resource="kylo_hand_minute" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
+                </AnalogClock>
+                <Group x="0" y="0" width="400" height="400" name="kylo_second_normal">
+                    <Transform target="alpha" value="[CONFIGURATION.sabre_hand] ? 0 : 255"/>
+                    <AnalogClock x="0" y="0" width="400" height="400">
+                        <SecondHand resource="kylo_hand_second" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5">
+                            <Variant mode="AMBIENT" target="alpha" value="0"/>
+                        </SecondHand>
+                    </AnalogClock>
+                </Group>
+                <Group x="0" y="0" width="400" height="400" name="kylo_second_sabre">
+                    <Transform target="alpha" value="[CONFIGURATION.sabre_hand] ? 255 : 0"/>
+                    <Group x="0" y="0" width="400" height="400" name="kylo_sabre_movement">
+                        <Transform target="angle" value="[SECOND] * 6 + [MILLISECOND] * 0.006"/>
+                        <Variant mode="AMBIENT" target="alpha" value="0"/>
+                        <PartDraw x="187" y="170" width="26" height="6">
+                            <Rectangle x="0" y="0" width="26" height="6"><Fill color="#80FF3B20"/></Rectangle>
+                        </PartDraw>
+                        <PartDraw x="189" y="172" width="22" height="2">
+                            <Rectangle x="0" y="0" width="22" height="2"><Fill color="#FFFFFFFF"/></Rectangle>
+                        </PartDraw>
+                        <PartDraw x="196" y="45" width="8" height="145">
+                            <Rectangle x="0" y="0" width="8" height="145"><Fill color="#80FF3B20"/></Rectangle>
+                        </PartDraw>
+                        <PartDraw x="198" y="47" width="4" height="141">
+                            <Rectangle x="0" y="0" width="4" height="141"><Fill color="#FFFFFFFF"/></Rectangle>
+                        </PartDraw>
+                        <PartDraw x="197" y="190" width="6" height="25">
+                            <Rectangle x="0" y="0" width="6" height="25"><Fill color="#FF888888"/></Rectangle>
+                        </PartDraw>
+                    </Group>
+                </Group>
+                <PartImage x="0" y="0" width="400" height="400"><Image resource="kylo_pivot"/></PartImage>
             </Group>
         </Group>
     </Scene>

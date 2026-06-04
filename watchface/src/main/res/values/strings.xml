@@ -10,6 +10,8 @@
     <string name="config_theme_bb8">BB-Unit</string>
     <string name="config_theme_r2">R-Unit</string>
     <string name="config_theme_yoda">Ancient Order</string>
+    <string name="config_theme_c3po">Protocol Unit</string>
+    <string name="config_theme_kylo">Knights of Ren</string>
 
     <!-- Second hand configuration -->
     <string name="config_sabre_label">Lightsaber Second Hand</string>
