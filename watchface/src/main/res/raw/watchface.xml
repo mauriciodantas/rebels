@@ -196,11 +196,26 @@
 
         <Group x="0" y="0" width="400" height="400" name="kylo_background_group">
             <Transform target="alpha" value="[CONFIGURATION.theme] == 7 ? 255 : 0"/>
+            <!--
+                Visual Style: Cinematic shot of Kylo Ren's crossguard lightsaber ignited.
+                The energy should look highly unstable, volatile, and raw, resembling a
+                crackling, jagged stream of dark red plasma with fiery sparks,
+                electric arcs, and smoke tendrils bleeding off the edges.
+            -->
             <PartDraw x="0" y="0" width="400" height="400"><Rectangle x="0" y="0" width="400" height="400"><Fill color="#FF000000"/></Rectangle></PartDraw>
             <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="kylo_background"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="kylo_pattern"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="kylo_ticks"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="kylo_sigil"/></PartImage>
+
+            <!-- Heat Distortion Simulation (Subtle pulse) -->
+            <PartDraw x="0" y="0" width="400" height="400">
+                <Transform target="alpha" value="10 + (([MILLISECOND] / 120) % 25)"/>
+                <Variant mode="AMBIENT" target="alpha" value="0"/>
+                <Rectangle x="0" y="0" width="400" height="400">
+                    <Fill color="#15FF3B20"/>
+                </Rectangle>
+            </PartDraw>
             <Group x="0" y="0" width="400" height="400" name="kylo_numerals">
                 <PartText x="180" y="20" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FFFF3B20"><Template>12</Template></Font></Text></PartText>
                 <PartText x="340" y="180" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FFFF3B20"><Template>03</Template></Font></Text></PartText>
@@ -984,25 +999,59 @@
                         </SecondHand>
                     </AnalogClock>
                 </Group>
+                <!-- Lightsaber Second Hand (Kylo Ren Unstable Version) -->
                 <Group x="0" y="0" width="400" height="400" name="kylo_second_sabre">
                     <Transform target="alpha" value="[CONFIGURATION.sabre_hand] ? 255 : 0"/>
                     <Group x="0" y="0" width="400" height="400" name="kylo_sabre_movement">
                         <Transform target="angle" value="[SECOND] * 6 + [MILLISECOND] * 0.006"/>
                         <Variant mode="AMBIENT" target="alpha" value="0"/>
-                        <PartDraw x="187" y="170" width="26" height="6">
-                            <RoundRectangle x="0" y="0" width="26" height="6" cornerRadiusX="3" cornerRadiusY="3"><Fill color="#80FF3B20"/></RoundRectangle>
+
+                        <!-- Unstable Plasma Glow (Flickering Aura) -->
+                        <PartDraw x="194" y="45" width="12" height="145">
+                            <Transform target="width" value="10 + (([MILLISECOND] / 40) % 6)"/>
+                            <Transform target="alpha" value="60 + (([MILLISECOND] / 20) % 80)"/>
+                            <RoundRectangle x="0" y="0" width="12" height="145" cornerRadiusX="6" cornerRadiusY="6"><Fill color="#99FF1000"/></RoundRectangle>
                         </PartDraw>
-                        <PartDraw x="189" y="172" width="22" height="2">
-                            <RoundRectangle x="0" y="0" width="22" height="2" cornerRadiusX="1" cornerRadiusY="1"><Fill color="#FFFFFFFF"/></RoundRectangle>
-                        </PartDraw>
+
+                        <!-- Jagged Stream (Fast Flickering) -->
                         <PartDraw x="196" y="45" width="8" height="145">
-                            <RoundRectangle x="0" y="0" width="8" height="145" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#80FF3B20"/></RoundRectangle>
+                            <Transform target="x" value="196 + (([MILLISECOND] / 30) % 3) - 1"/>
+                            <Transform target="alpha" value="150 + (([MILLISECOND] / 15) % 105)"/>
+                            <RoundRectangle x="0" y="0" width="8" height="145" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#CCFF3B20"/></RoundRectangle>
                         </PartDraw>
+
+                        <!-- Crossguard Vents (Sputtering Unevenly) -->
+                        <Group x="187" y="170" width="26" height="6" name="kylo_crossguard_group">
+                            <!-- Left Vent -->
+                            <PartDraw x="0" y="0" width="12" height="6">
+                                <Transform target="width" value="10 + (([MILLISECOND] / 50) % 6)"/>
+                                <Transform target="alpha" value="100 + (([MILLISECOND] / 45) % 155)"/>
+                                <RoundRectangle x="0" y="0" width="12" height="6" cornerRadiusX="3" cornerRadiusY="3"><Fill color="#CCFF1000"/></RoundRectangle>
+                            </PartDraw>
+                            <!-- Right Vent -->
+                            <PartDraw x="14" y="0" width="12" height="6">
+                                <Transform target="width" value="10 + (([MILLISECOND] / 70) % 7)"/>
+                                <Transform target="alpha" value="100 + (([MILLISECOND] / 35) % 155)"/>
+                                <RoundRectangle x="0" y="0" width="12" height="6" cornerRadiusX="3" cornerRadiusY="3"><Fill color="#CCFF1000"/></RoundRectangle>
+                            </PartDraw>
+                        </Group>
+
+                        <!-- Fluctuating Core -->
                         <PartDraw x="198" y="47" width="4" height="141">
+                            <Transform target="alpha" value="180 + (([MILLISECOND] / 50) % 75)"/>
                             <RoundRectangle x="0" y="0" width="4" height="141" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
                         </PartDraw>
+
+                        <!-- Arcs and Sparks (Randomized flickering dots) -->
+                        <PartDraw x="194" y="60" width="2" height="2">
+                             <Transform target="y" value="60 + (([MILLISECOND] / 5) % 80)"/>
+                             <Transform target="alpha" value="(([MILLISECOND] / 10) % 5) == 0 ? 255 : 0"/>
+                             <Rectangle x="0" y="0" width="2" height="2"><Fill color="#FFFFAAAA"/></Rectangle>
+                        </PartDraw>
+
+                        <!-- Hilt -->
                         <PartDraw x="197" y="190" width="6" height="25">
-                            <Rectangle x="0" y="0" width="6" height="25"><Fill color="#FF888888"/></Rectangle>
+                            <Rectangle x="0" y="0" width="6" height="25"><Fill color="#FF555555"/></Rectangle>
                         </PartDraw>
                     </Group>
                 </Group>
