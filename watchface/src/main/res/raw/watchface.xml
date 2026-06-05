@@ -628,11 +628,11 @@
                         <Variant mode="AMBIENT" target="alpha" value="0"/>
                         <!-- Blade Aura -->
                         <PartDraw x="196" y="45" width="8" height="145">
-                            <Rectangle x="0" y="0" width="8" height="145"><Fill color="#80FFA726"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="8" height="145" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#80FFA726"/></RoundRectangle>
                         </PartDraw>
                         <!-- Blade Core -->
                         <PartDraw x="198" y="47" width="4" height="141">
-                            <Rectangle x="0" y="0" width="4" height="141"><Fill color="#FFFFFFFF"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="4" height="141" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
                         </PartDraw>
                         <!-- Hilt -->
                         <PartDraw x="197" y="190" width="6" height="25">
@@ -683,11 +683,11 @@
                         <Variant mode="AMBIENT" target="alpha" value="0"/>
                         <!-- Blade Aura -->
                         <PartDraw x="196" y="45" width="8" height="145">
-                            <Rectangle x="0" y="0" width="8" height="145"><Fill color="#80FF2D3A"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="8" height="145" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#80FF2D3A"/></RoundRectangle>
                         </PartDraw>
                         <!-- Blade Core -->
                         <PartDraw x="198" y="47" width="4" height="141">
-                            <Rectangle x="0" y="0" width="4" height="141"><Fill color="#FFFFFFFF"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="4" height="141" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
                         </PartDraw>
                         <!-- Hilt -->
                         <PartDraw x="197" y="190" width="6" height="25">
@@ -738,11 +738,11 @@
                         <Variant mode="AMBIENT" target="alpha" value="0"/>
                         <!-- Blade Aura -->
                         <PartDraw x="196" y="45" width="8" height="145">
-                            <Rectangle x="0" y="0" width="8" height="145"><Fill color="#801D4EAF"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="8" height="145" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#801D4EAF"/></RoundRectangle>
                         </PartDraw>
                         <!-- Blade Core -->
                         <PartDraw x="198" y="47" width="4" height="141">
-                            <Rectangle x="0" y="0" width="4" height="141"><Fill color="#FFFFFFFF"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="4" height="141" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
                         </PartDraw>
                         <!-- Hilt -->
                         <PartDraw x="197" y="190" width="6" height="25">
@@ -790,10 +790,10 @@
                         <Transform target="angle" value="[SECOND] * 6 + [MILLISECOND] * 0.006"/>
                         <Variant mode="AMBIENT" target="alpha" value="0"/>
                         <PartDraw x="196" y="45" width="8" height="145">
-                            <Rectangle x="0" y="0" width="8" height="145"><Fill color="#80E8590C"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="8" height="145" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#80E8590C"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="198" y="47" width="4" height="141">
-                            <Rectangle x="0" y="0" width="4" height="141"><Fill color="#FFFFFFFF"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="4" height="141" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="197" y="190" width="6" height="25">
                             <Rectangle x="0" y="0" width="6" height="25"><Fill color="#FF888888"/></Rectangle>
@@ -840,10 +840,10 @@
                         <Transform target="angle" value="[SECOND] * 6 + [MILLISECOND] * 0.006"/>
                         <Variant mode="AMBIENT" target="alpha" value="0"/>
                         <PartDraw x="196" y="45" width="8" height="145">
-                            <Rectangle x="0" y="0" width="8" height="145"><Fill color="#801565C0"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="8" height="145" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#801565C0"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="198" y="47" width="4" height="141">
-                            <Rectangle x="0" y="0" width="4" height="141"><Fill color="#FFFFFFFF"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="4" height="141" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="197" y="190" width="6" height="25">
                             <Rectangle x="0" y="0" width="6" height="25"><Fill color="#FF888888"/></Rectangle>
@@ -890,10 +890,10 @@
                         <Transform target="angle" value="[SECOND] * 6 + [MILLISECOND] * 0.006"/>
                         <Variant mode="AMBIENT" target="alpha" value="0"/>
                         <PartDraw x="196" y="45" width="8" height="145">
-                            <Rectangle x="0" y="0" width="8" height="145"><Fill color="#808BC34A"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="8" height="145" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#808BC34A"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="198" y="47" width="4" height="141">
-                            <Rectangle x="0" y="0" width="4" height="141"><Fill color="#FFFFFFFF"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="4" height="141" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="197" y="190" width="6" height="25">
                             <Rectangle x="0" y="0" width="6" height="25"><Fill color="#FF888888"/></Rectangle>
@@ -940,10 +940,10 @@
                         <Transform target="angle" value="[SECOND] * 6 + [MILLISECOND] * 0.006"/>
                         <Variant mode="AMBIENT" target="alpha" value="0"/>
                         <PartDraw x="196" y="45" width="8" height="145">
-                            <Rectangle x="0" y="0" width="8" height="145"><Fill color="#807A5212"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="8" height="145" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#807A5212"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="198" y="47" width="4" height="141">
-                            <Rectangle x="0" y="0" width="4" height="141"><Fill color="#FFFFFFFF"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="4" height="141" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="197" y="190" width="6" height="25">
                             <Rectangle x="0" y="0" width="6" height="25"><Fill color="#FF888888"/></Rectangle>
@@ -990,16 +990,16 @@
                         <Transform target="angle" value="[SECOND] * 6 + [MILLISECOND] * 0.006"/>
                         <Variant mode="AMBIENT" target="alpha" value="0"/>
                         <PartDraw x="187" y="170" width="26" height="6">
-                            <Rectangle x="0" y="0" width="26" height="6"><Fill color="#80FF3B20"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="26" height="6" cornerRadiusX="3" cornerRadiusY="3"><Fill color="#80FF3B20"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="189" y="172" width="22" height="2">
-                            <Rectangle x="0" y="0" width="22" height="2"><Fill color="#FFFFFFFF"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="22" height="2" cornerRadiusX="1" cornerRadiusY="1"><Fill color="#FFFFFFFF"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="196" y="45" width="8" height="145">
-                            <Rectangle x="0" y="0" width="8" height="145"><Fill color="#80FF3B20"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="8" height="145" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#80FF3B20"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="198" y="47" width="4" height="141">
-                            <Rectangle x="0" y="0" width="4" height="141"><Fill color="#FFFFFFFF"/></Rectangle>
+                            <RoundRectangle x="0" y="0" width="4" height="141" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
                         </PartDraw>
                         <PartDraw x="197" y="190" width="6" height="25">
                             <Rectangle x="0" y="0" width="6" height="25"><Fill color="#FF888888"/></Rectangle>
