@@ -1112,12 +1112,12 @@
             <Transform target="alpha" value="[CONFIGURATION.theme] == 8 ? 255 : 0"/>
             <Group x="145" y="275" width="110" height="36" name="stormtrooper_digital_clock">
                 <PartText x="0" y="0" width="110" height="36">
-                    <Text align="CENTER"><Font family="orbitron" size="26" weight="BOLD" color="#FF1A1D22"><Template>%02d:%02d<Parameter expression="[HOUR_0_23]"/><Parameter expression="[MINUTE]"/></Template></Font></Text>
+                    <Text><Font family="orbitron" size="26" weight="BOLD" color="#FF1A1D22"><Template>%02d:%02d<Parameter expression="[HOUR_0_23]"/><Parameter expression="[MINUTE]"/></Template></Font></Text>
                 </PartText>
             </Group>
             
             <Group x="0" y="0" width="400" height="400" name="stormtrooper_hands">
-                <Transform target="alpha" value="[AMBIENT_STATE] == 1 ? 0 : 255"/>
+                <Variant mode="AMBIENT" target="alpha" value="0"/>
                 
                 <AnalogClock x="0" y="0" width="400" height="400">
                     <HourHand resource="stormtrooper_hand_hour" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
@@ -1152,7 +1152,7 @@
                         </PartDraw>
 
                         <!-- Laser Bolt 1 (Animates outwards smoothly) -->
-                        <Group x="0" y="0" width="400" height="400">
+                        <Group x="0" y="0" width="400" height="400" name="laser_bolt_1">
                             <!-- Moves slower over a full second (1000ms) -->
                             <Transform target="y" value="[MILLISECOND] * -0.16" />
                             <!-- Fades out as it moves to avoid abrupt disappearance -->
@@ -1166,7 +1166,7 @@
                         </Group>
 
                         <!-- Laser Bolt 2 (Animates outwards smoothly, offset by 500ms) -->
-                        <Group x="0" y="0" width="400" height="400">
+                        <Group x="0" y="0" width="400" height="400" name="laser_bolt_2">
                             <Transform target="y" value="(([MILLISECOND] + 500) % 1000) * -0.16" />
                             <Transform target="alpha" value="255 - ((([MILLISECOND] + 500) % 1000) * 0.255)" />
                             <PartDraw x="196" y="125" width="8" height="35">
