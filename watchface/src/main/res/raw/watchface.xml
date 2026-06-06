@@ -241,11 +241,25 @@
             <PartImage x="0" y="0" width="400" height="400"><Variant mode="AMBIENT" target="alpha" value="0"/><Image resource="stormtrooper_pattern"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="stormtrooper_ticks"/></PartImage>
             <PartImage x="0" y="0" width="400" height="400"><Image resource="stormtrooper_sigil"/></PartImage>
+
             <Group x="0" y="0" width="400" height="400" name="stormtrooper_numerals">
-                <PartText x="180" y="20" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF1A1D22"><Template>12</Template></Font></Text></PartText>
-                <PartText x="340" y="180" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF1A1D22"><Template>03</Template></Font></Text></PartText>
-                <PartText x="180" y="340" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF1A1D22"><Template>06</Template></Font></Text></PartText>
-                <PartText x="20" y="180" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF1A1D22"><Template>09</Template></Font></Text></PartText>
+                <!-- ACTIVE MODE: Dark gray numerals -->
+                <Group x="0" y="0" width="400" height="400" name="stormtrooper_numerals_active">
+                    <Variant mode="AMBIENT" target="alpha" value="0"/>
+                    <PartText x="180" y="20" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF1A1D22"><Template>12</Template></Font></Text></PartText>
+                    <PartText x="340" y="180" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF1A1D22"><Template>03</Template></Font></Text></PartText>
+                    <PartText x="180" y="340" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF1A1D22"><Template>06</Template></Font></Text></PartText>
+                    <PartText x="20" y="180" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FF1A1D22"><Template>09</Template></Font></Text></PartText>
+                </Group>
+                <!-- AMBIENT MODE: White numerals for high contrast -->
+                <Group x="0" y="0" width="400" height="400" name="stormtrooper_numerals_ambient">
+                    <Transform target="alpha" value="0"/>
+                    <Variant mode="AMBIENT" target="alpha" value="255"/>
+                    <PartText x="180" y="20" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FFFFFFFF"><Template>12</Template></Font></Text></PartText>
+                    <PartText x="340" y="180" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FFFFFFFF"><Template>03</Template></Font></Text></PartText>
+                    <PartText x="180" y="340" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FFFFFFFF"><Template>06</Template></Font></Text></PartText>
+                    <PartText x="20" y="180" width="40" height="40"><Text><Font family="orbitron" size="26" weight="BOLD" color="#FFFFFFFF"><Template>09</Template></Font></Text></PartText>
+                </Group>
             </Group>
             <PartText x="80" y="82" width="240" height="24">
                 <Variant mode="AMBIENT" target="alpha" value="0"/>
@@ -1111,14 +1125,21 @@
         <Group x="0" y="0" width="400" height="400" name="stormtrooper_hands_group">
             <Transform target="alpha" value="[CONFIGURATION.theme] == 8 ? 255 : 0"/>
             <Group x="145" y="275" width="110" height="36" name="stormtrooper_digital_clock">
+                <!-- ACTIVE: Dark gray clock -->
                 <PartText x="0" y="0" width="110" height="36">
+                    <Variant mode="AMBIENT" target="alpha" value="0"/>
                     <Text><Font family="orbitron" size="26" weight="BOLD" color="#FF1A1D22"><Template>%02d:%02d<Parameter expression="[HOUR_0_23]"/><Parameter expression="[MINUTE]"/></Template></Font></Text>
+                </PartText>
+                <!-- AMBIENT: White clock -->
+                <PartText x="0" y="0" width="110" height="36">
+                    <Transform target="alpha" value="0"/>
+                    <Variant mode="AMBIENT" target="alpha" value="255"/>
+                    <Text><Font family="orbitron" size="26" weight="BOLD" color="#FFFFFFFF"><Template>%02d:%02d<Parameter expression="[HOUR_0_23]"/><Parameter expression="[MINUTE]"/></Template></Font></Text>
                 </PartText>
             </Group>
             
             <Group x="0" y="0" width="400" height="400" name="stormtrooper_hands">
-                <Variant mode="AMBIENT" target="alpha" value="0"/>
-                
+                <!-- Hand visibility in AMBIENT: Re-enabled -->
                 <AnalogClock x="0" y="0" width="400" height="400">
                     <HourHand resource="stormtrooper_hand_hour" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
                     <MinuteHand resource="stormtrooper_hand_minute" x="0" y="0" width="400" height="400" pivotX="0.5" pivotY="0.5"/>
@@ -1179,7 +1200,9 @@
                     </Group>
                 </Group>
 
-                <PartImage x="0" y="0" width="400" height="400"><Image resource="stormtrooper_pivot"/></PartImage>
+                <PartImage x="0" y="0" width="400" height="400">
+                    <Image resource="stormtrooper_pivot"/>
+                </PartImage>
             </Group>
         </Group>
     </Scene>
