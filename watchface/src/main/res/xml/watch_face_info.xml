@@ -1,4 +1,4 @@
-<WatchFaceInfo>
+<WatchFaceInfo xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Preview image shown in the watch face picker -->
     <Preview value="@drawable/rebels_theme_preview" />
 
