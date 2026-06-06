@@ -14,8 +14,8 @@ android {
         applicationId = "net.mdantas.rebels"
         minSdk = 35
         targetSdk = 36
-        versionCode = 5
-        versionName = "5"
+        versionCode = 7
+        versionName = "7"
 
     }
 
