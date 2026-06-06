@@ -15,5 +15,5 @@
     <string name="config_theme_stormtrooper">Garrison Corps</string>
 
     <!-- Second hand configuration -->
-    <string name="config_sabre_label">Lightsaber Second Hand</string>
+    <string name="config_sabre_label">Special Weapon Second Hand</string>
 </resources>

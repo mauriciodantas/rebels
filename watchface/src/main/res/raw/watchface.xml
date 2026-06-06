@@ -1138,18 +1138,44 @@
                     <Group x="0" y="0" width="400" height="400" name="stormtrooper_sabre_movement">
                         <Transform target="angle" value="[SECOND] * 6 + [MILLISECOND] * 0.006"/>
                         <Variant mode="AMBIENT" target="alpha" value="0"/>
-                        <!-- Blade Aura -->
-                        <PartDraw x="196" y="45" width="8" height="145">
-                            <RoundRectangle x="0" y="0" width="8" height="145" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#80B3322F"/></RoundRectangle>
+                        <!-- Blaster Scope -->
+                        <PartDraw x="194" y="165" width="3" height="15">
+                            <Rectangle x="0" y="0" width="3" height="15"><Fill color="#FF1A1D22"/></Rectangle>
                         </PartDraw>
-                        <!-- Blade Core -->
-                        <PartDraw x="198" y="47" width="4" height="141">
-                            <RoundRectangle x="0" y="0" width="4" height="141" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
+                        <!-- Blaster Barrel -->
+                        <PartDraw x="197" y="160" width="6" height="35">
+                            <Rectangle x="0" y="0" width="6" height="35"><Fill color="#FF1A1D22"/></Rectangle>
                         </PartDraw>
-                        <!-- Hilt -->
-                        <PartDraw x="197" y="190" width="6" height="25">
-                            <Rectangle x="0" y="0" width="6" height="25"><Fill color="#FF888888"/></Rectangle>
+                        <!-- Blaster Grip -->
+                        <PartDraw x="197" y="195" width="6" height="15">
+                            <Rectangle x="0" y="0" width="6" height="15"><Fill color="#FF1A1D22"/></Rectangle>
                         </PartDraw>
+
+                        <!-- Laser Bolt 1 (Animates outwards smoothly) -->
+                        <Group x="0" y="0" width="400" height="400">
+                            <!-- Moves slower over a full second (1000ms) -->
+                            <Transform target="y" value="[MILLISECOND] * -0.16" />
+                            <!-- Fades out as it moves to avoid abrupt disappearance -->
+                            <Transform target="alpha" value="255 - ([MILLISECOND] * 0.255)" />
+                            <PartDraw x="196" y="125" width="8" height="35">
+                                <RoundRectangle x="0" y="0" width="8" height="35" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#80FF2D3A"/></RoundRectangle>
+                            </PartDraw>
+                            <PartDraw x="198" y="127" width="4" height="31">
+                                <RoundRectangle x="0" y="0" width="4" height="31" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
+                            </PartDraw>
+                        </Group>
+
+                        <!-- Laser Bolt 2 (Animates outwards smoothly, offset by 500ms) -->
+                        <Group x="0" y="0" width="400" height="400">
+                            <Transform target="y" value="(([MILLISECOND] + 500) % 1000) * -0.16" />
+                            <Transform target="alpha" value="255 - ((([MILLISECOND] + 500) % 1000) * 0.255)" />
+                            <PartDraw x="196" y="125" width="8" height="35">
+                                <RoundRectangle x="0" y="0" width="8" height="35" cornerRadiusX="4" cornerRadiusY="4"><Fill color="#80FF2D3A"/></RoundRectangle>
+                            </PartDraw>
+                            <PartDraw x="198" y="127" width="4" height="31">
+                                <RoundRectangle x="0" y="0" width="4" height="31" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#FFFFFFFF"/></RoundRectangle>
+                            </PartDraw>
+                        </Group>
                     </Group>
                 </Group>
 
