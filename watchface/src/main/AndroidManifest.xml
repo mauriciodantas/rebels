@@ -25,6 +25,14 @@
             android:name="com.google.wear.watchface.format.publisher"
             android:value="Rebels-WFF-1.0" />
 
+        <meta-data
+            android:name="com.google.wear.watchface.format.layout"
+            android:resource="@raw/watchface" />
+
+        <meta-data
+            android:name="android.service.watchface.watchface"
+            android:resource="@xml/watch_face_info" />
+
     </application>
 
 </manifest>
