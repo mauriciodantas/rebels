@@ -14,21 +14,38 @@ android {
         applicationId = "net.mdantas.rebels"
         minSdk = 35
         targetSdk = 36
-        versionCode = 8
-        versionName = "8"
-
+        versionCode = 9
+        versionName = "9"
     }
 
     buildTypes {
         release {
             isMinifyEnabled = true
-            isShrinkResources = true
+            isShrinkResources = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
             )
         }
     }
+
+    sourceSets {
+        getByName("main") {
+            java.setSrcDirs(emptyList<String>())
+            kotlin.setSrcDirs(emptyList<String>())
+        }
+    }
+
+    packaging {
+        resources {
+            excludes.add("classes.dex")
+            excludes.add("**/classes.dex")
+            excludes.add("META-INF/*.kotlin_module")
+            excludes.add("**/R.class")
+            excludes.add("**/R$*.class")
+        }
+    }
+
     buildFeatures {
         buildConfig = false
         aidl = false
@@ -36,8 +53,17 @@ android {
         shaders = false
     }
 
-
+    lint {
+        checkReleaseBuilds = false
+    }
 }
 
 dependencies {
+}
+
+configurations.all {
+    exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib")
+    exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib-jdk8")
+    exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib-jdk7")
+    exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib-common")
 }
